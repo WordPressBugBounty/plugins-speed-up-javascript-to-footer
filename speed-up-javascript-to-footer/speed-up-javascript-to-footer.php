@@ -3,7 +3,7 @@
  Plugin Name: Speed Up - JavaScript To Footer
  Plugin URI: http://wordpress.org/plugins/speed-up-javascript-to-footer/
  Description: Move all the possible JavaScript files from head to footer and improve page load times.
- Version: 1.0.11
+ Version: 1.0.12
  Author: Simone Nigro
  Author URI: https://profiles.wordpress.org/nigrosimone
  License: GPLv2 or later
