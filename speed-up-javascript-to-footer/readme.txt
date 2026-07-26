@@ -1,10 +1,11 @@
 === Speed Up - JavaScript To Footer ===
 Contributors: nigro.simone
 Donate link: http://paypal.me/snwp
-Tags: javascript, scripts, wp_enqueue_scripts, footer, head, performance, jquery, seo, optimize, front-end optimization, performance, speed, web performance optimization, wordpress optimization tool
-Requires at least: 3.5
+Tags: javascript to footer, render blocking, preload scripts, page speed, performance
+Requires at least: 6.0
+Requires PHP: 7.0
 Tested up to: 7.0
-Stable tag: 1.0.12
+Stable tag: 1.0.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +24,15 @@ Configurations are not required! You just have to install it and after the plugi
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= 1.0.14 =
+* Documentation: explain why the plugin does not use the defer strategy added in WordPress 6.3, and how to use it directly if you prefer
+
+= 1.0.13 =
+* Fix a fatal error on WordPress older than 4.2: the plugin uses wp_scripts(), available since 4.2, but declared compatibility with 3.5
+* Escape the script URL in the generated preload tag
+* Skip preloading scripts registered for Internet Explorer, which no browser in use would run
+* Declare minimum requirements: WordPress 6.0 and PHP 7.0
 
 = 1.0.12 =
 * Tested up to Wordpress 7.0
